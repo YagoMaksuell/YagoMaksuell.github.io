@@ -107,30 +107,7 @@ function chatbotResponse() {
   talking = false;
   botMessage = "Desculpe, não entendi :("; //the default message
 
-  // TESTE EM DESENVOLVIMENTO
-  // if (lastUserMessage === 'oi' || lastUserMessage =='ola') {
-  //   const hi = ['oi','hey','ola']
-  //   botMessage = hi[Math.floor(Math.random()*(hi.length))];;
-  // }
-
-  if (lastUserMessage === 'name') {
-    botMessage = 'My name is ' + botName;
-  }
-
-  if (lastUserMessage === 'site') {
-    botMessage = 'site solicitado: www.google.com';
-  }
-
-// TESTAR COM FERRAMENTAS PROFISSIONAIS
-if (lastUserMessage === 'oi') {
-  botMessage = 'Ola, Digite  a opção desejada: <br> 1 Para fazer pagamento. <br>2 Estou com problemas no serviço. <br> 3 Outros. ';
-}
-
-if (lastUserMessage === '1') {
-  botMessage = 'Pagamento por Pix, Liberação imediata utilize a <strong>chave Pix:</strong> 16982111518 <br> <a href="https://www.google.com/search?sxsrf=ALeKk02GW0HwwIMXh3bB7gUry3A4nODP4g%3A1609168700733&ei=PPfpX4WiLMu-5OUPxM-3iA0&q=como+transferir+por+pix%3F&oq=como+transferir+por+pix%3F&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIICAAQBxAKEB46BAgAEEc6BwgjELACECc6BggAEA0QClCyxgFY4NIBYMfWAWgBcAN4AIABdIgB3AGSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwiFsKnG_PDtAhVLH7kGHcTnDdEQ4dUDCA0&uact=5">Não sabe utilizar pix?Clique Aqui.</a>';
-}
-
-// SOU CLIENTE
+ // SOU CLIENTE
 
 if(lastUserMessage.toLowerCase() === 'oi' || lastUserMessage.toLowerCase() =='ola'){
 botMessage = 'Ola!! Digite "sou cliente" se ja é cliente, ou digite "saber mais" para saber mais';
@@ -166,7 +143,7 @@ botMessage = 'Acesse: <a href="https://yagomaksuell.github.io/planos">Clique aqu
 
 
 if(lastUserMessage.toLowerCase() === 'sistemas'){
-botMessage = 'Acesse: <a href="https://yagomaksuell.github.io/planos">Clique aqui para ver planos de TV</a>'
+botMessage = 'Acesse: <a href="https://yagomaksuell.github.io/sistemas">Clique aqui para ver planos de TV</a>'
 }
 
 
